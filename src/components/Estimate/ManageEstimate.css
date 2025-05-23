@@ -1,0 +1,208 @@
+/* Main container */
+.manage-estimate-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* List View Styles */
+  .estimate-list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .estimate-summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .total-estimate-card {
+    background-color: #e53935;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .total-estimate-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .total-estimate-card p {
+    margin: 5px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .create-estimate-btn {
+    background-color: #1b9e4b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .create-estimate-btn:hover {
+    background-color: #157a3a;
+  }
+  
+  /* Table Styles */
+  .estimate-table-container {
+    overflow-x: auto;
+  }
+  
+  .estimate-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estimate-table th,
+  .estimate-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .estimate-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+  }
+  
+  .estimate-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  .delete-btn {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  
+  /* Create Estimate Form Styles */
+  .create-estimate-view {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estimate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .select-wrapper {
+    position: relative;
+  }
+  
+  .select-wrapper:after {
+    content: "▼";
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .save-estimate-btn {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-estimate-btn:hover {
+    background-color: #1565c0;
+  }
+
+  .generate-btn {
+    background-color: #6c63ff;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .generate-btn:hover {
+    background-color: #574b90;
+    transform: scale(1.05);
+  }
+  
+  

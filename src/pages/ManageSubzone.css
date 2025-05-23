@@ -1,0 +1,165 @@
+.manage-subzones-container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.manage-subzones-container h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.zone-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.zone-form input,
+.zone-form select,
+.zone-form button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.zone-form input,
+.zone-form select {
+  min-width: 200px;
+}
+
+.zone-form button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
+}
+
+.zone-form button:hover {
+  background-color: #0056b3;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.filters select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+.zone-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.zone-table th,
+.zone-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.zone-table th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.zone-table td {
+  background-color: #fafafa;
+}
+
+.zone-table td button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.zone-table td button.edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.zone-table td button.delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.zone-table td button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .zone-form,
+  .filters {
+    flex-direction: column;
+  }
+
+  .zone-form input,
+  .zone-form select,
+  .zone-form button,
+  .filters select {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .zone-table th,
+  .zone-table td {
+    padding: 10px;
+  }
+}
+/* Style for the search and dropdown */
+.zone-form input,
+.zone-form select,
+.filters select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  outline: none; /* Remove the default focus outline */
+}
+
+.zone-form input:focus,
+.zone-form select:focus,
+.filters select:focus {
+  border-color: #007bff; /* Focus state with a blue border */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow effect when focused */
+}
+
+/* Hover effect for search and dropdown */
+.zone-form input:hover,
+.zone-form select:hover,
+.filters select:hover {
+  border-color: #007bff; /* Change border color on hover */
+  background-color: #f1f1f1; /* Slight background change for hover effect */
+}
+
+.zone-form input:focus:hover,
+.zone-form select:focus:hover,
+.filters select:focus:hover {
+  background-color: #fff; /* Keep background white when focused */
+}
